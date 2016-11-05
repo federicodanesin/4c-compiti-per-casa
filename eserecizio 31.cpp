@@ -21,10 +21,10 @@ return 0;
 
 void ripeti_stringa(string x)
  {
-     int i=0;
-     while (i<3) {
+     int i=1;
+     while (i<4) {
 
-           cout<<x<<endl;
-           i=i+1;  }
+           cout<<i<<") "<<x<<endl;
+         i=i+1;  }
 
 }
