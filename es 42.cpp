@@ -18,7 +18,7 @@ somma_acquisizione_dati();
 
 
 
-media zss ();
+media  ();
 
 return 0;}
 
@@ -56,7 +56,7 @@ float m;
 m=somma/i;
 
 
-cout<<endl<<"la media dell' incasso è :"<<m;
+cout<<endl<<"la media dell' incasso Ã¨ :"<<m;
 
 
 
