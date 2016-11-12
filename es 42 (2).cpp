@@ -1,4 +1,4 @@
-
+5
 #include <iostream>
 #include <string>
 using namespace std;
@@ -9,7 +9,8 @@ const int MAX= 100;
 void carica_vettore (string v[],int d);
 void carica_prodotti (float u[], int d);
 
-void incremento (string v[],float u[], int d);int dimensione (void);
+void incremento (string v[],float u[], int d);
+int dimensione (void);
 
 
 int d;

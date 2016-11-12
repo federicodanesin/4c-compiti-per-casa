@@ -4,10 +4,10 @@
 #include <string>
 using namespace std;
 
-void elezioni(float x, float y, string k, string l);
+void elezioni(int x, int y, string k, string l);
 
-float c,d;
-int h,g;
+int c,d;
+float h,g;
 
 string a,b;
 int main (){
@@ -28,20 +28,20 @@ cout<<"inserire i suoi voti";
 
 cin>>d;
 
-cout<<g;
+
 
 elezioni (c,d,a,b);
 
 return 0;}
 
 
-void elezioni(float x, float y, string k, string l) {
+void elezioni(int  x, int y, string k, string l) {
 
 
 
-g=(x/(x+y))*100;
+g=(float)(x*100)/(x+y);
 
-h=(y/(x+y))*100;
+h=(float)(y*100)/(x+y);
 
 if (g>h){
 
