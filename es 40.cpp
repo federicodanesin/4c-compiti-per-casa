@@ -3,45 +3,62 @@
 #include <iostream>
 using namespace std;
 
-void punto (float x, float y, float q, float xp, float yp);
-float a,b,q,d,e,z;
+
+struct retta {
+
+float x;
+float y;
+float q;
+};
+ retta R;
+
+struct punto {
+float xp;
+float yp;
+};
+punto P;
+
+bool all( retta R,punto P);
+float z;
+
+
+
 
 int main () {
 
 cout<<"inserire coeficiente angolare :";
-cin>>a;
+cin>>R.x;
 cout<<endl<<"inserire il coeficiente della y :";
-cin>>b;
+cin>>R.y;
 cout<<endl<<"inserire termine noto q :";
-cin>>q;
+cin>>R.q;
 
 
 cout<<endl<<"inserire ascissa del punto xp:";
-cin>>d;
+cin>>P.xp;
 
 cout<<endl<<"inserire ascissa del punto yp:";
-cin>>e;
+cin>>P.yp;
 
- punto (a,b,q,d,e);
+  if(all ( R,P) )
+
+      cout<<endl<<"il punto appartiene alla retta "<<endl;
+   else
+
+      cout<<endl<<"il punto non appartiene alla retta"<<endl;
+
+
+
+
+
+
 
 return 0 ;
 }
 
-void punto (float x, float y, float q, float xp, float yp) {
+bool all (retta R,punto P) {
 
- z=(x*xp)+q-(y*yp);
-
-    if(z==0)
-      { cout<<endl<<"il punto appartiene alla retta "<<endl;
-
-      }
-     else
-     {
-         cout<<endl<<"il punto non appartiene alla retta"<<endl;
-     }
-
-
-  }
+return  z==(R.x*P.xp)+R.q-(R.y*P.yp);  }
 
 
 
